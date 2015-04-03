@@ -174,6 +174,8 @@ describe('Person Meetup Relations', function() {
         .end(function (err, res) {
           should.not.exist(err);
 
+          console.log(res.body);
+
           res.body.should.be.instanceOf(Object);
           res.body.should.have.property('id');
           res.body.should.have.property('personId', JohnWatson.id);
@@ -194,6 +196,8 @@ describe('Person Meetup Relations', function() {
         .expect(200)
         .end(function (err, res) {
           should.not.exist(err);
+
+          console.log(res.body);
 
           res.body.should.be.instanceOf(Object);
           res.body.should.have.property('id');
