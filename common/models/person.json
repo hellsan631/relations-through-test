@@ -1,0 +1,26 @@
+{
+  "name": "person",
+  "plural": "people",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "meetups": {
+      "type": "hasMany",
+      "model": "meetup",
+      "through": "invite"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

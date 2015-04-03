@@ -1,0 +1,23 @@
+{
+  "name": "meetup",
+  "plural": "meetups",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "createdOn": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "invites": {
+      "type": "hasMany",
+      "model": "invite"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

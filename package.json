@@ -1,0 +1,31 @@
+{
+  "name": "relations-through-test",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "dependencies": {
+    "compression": "^1.0.3",
+    "errorhandler": "^1.1.1",
+    "loopback": "^2.8.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-datasource-juggler": "^2.7.0",
+    "serve-favicon": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "jshint": "*",
+    "mocha": "*",
+    "supertest": "*"
+  },
+   "optionalDependencies": {
+    "loopback-explorer": "^1.1.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec server/tests/*.test.js",
+    "pretest": "jshint ."
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "description": "relations-through-test"
+}
