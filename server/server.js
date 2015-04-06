@@ -20,3 +20,6 @@ boot(app, __dirname, function(err) {
   if (require.main === module)
     app.start();
 });
+
+//gets rid of event emitter spam in logs due to supertest
+require('events').EventEmitter.prototype._maxListeners = 20;
